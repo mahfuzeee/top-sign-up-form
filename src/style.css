@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+   --my-padding: 2px 2.5rem;
+   --btn-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: 'Norse'; /* Specify a name for the font family */
+  src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype'); /* Point to the font file */
+  font-weight: bold; /* Define this specific file as the bold weight */
+  font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+span {
+    display: block;
+}
+
+/*Left Side... Image and logo design*/
+#image-div {
+   background-image: url("./leaf_image.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+   width: 34%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#logo {
+   width: 100%;
+   height: 3.5rem;
+   background-color: rgb(0, 0, 0, 0.3);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   font-weight: bold;
+   /* letter-spacing: .12rem; */
+   gap: 0.4rem;
+}
+
+#logo>h3 {
+   font-family: 'Norse', sans-serif;
+   margin: 0;
+   font-size: 2.5rem;
+}
+
+#img-text {
+    color: white;
+    position: relative;
+    top: 40vh;
+    z-index: 10;
+}
+
+#img-text>a {
+    color: white;
+}
+
+/* Right side... Text and form design */
+
+#form-div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #fdfeff;
+   width: 66%;
+   
+   
+}
+
+.text-group,
+.input-fields,
+.button-group {
+    padding: var(--my-padding);
+}
+
+.text-group {
+   margin-bottom: 2rem;
+}
+
+.text-group>p {
+   font-size: 1.3rem;
+   font-weight: 500;
+   
+}
+
+/* Input field section design */
+.field-group {
+   border: none;
+  
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+    clip-path: inset(-6px 0px -15px 0px);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+
+h3 {
+   padding: 0;
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+}
+
+.input-fields {
+   border: none;
+   padding-top: 1rem;
+   padding-bottom: 2.5rem;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    width: 75%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 0.85rem;
+    gap: 0.2rem;
+}
+
+.labels {
+    letter-spacing: 0.1rem;
+}
+
+input {
+   padding: 0.2rem 0.4rem;
+   font-size: 1.1rem;
+   border-color: #E5E7EB;
+   border-style: solid;
+   border-radius: 6px;
+}
+
+
+/* Submit Button design */
+.button-group {
+    margin-top: 2.5rem;
+    
+}
+
+#submit-btn {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.5rem 1.2rem;
+}
+
+#submit-btn:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+/*Sudo Class design*/
+
+input[type="password"]:invalid {
+   border-color: red;
+}
+
+input:focus {
+   outline: none;
+   border-color: blue;
+   box-shadow: var(--btn-shadow);
+}

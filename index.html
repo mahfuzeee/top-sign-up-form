@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Sign up form</title>
+</head>
+<body>
+    <div class="container">
+        <div id="image-div">
+            <div id="logo">
+               <img src="./src/MR_logo.png" alt="Logo"  height="80%">
+               <h3>MAHFUZ</h3>
+            </div>
+            <p id="img-text">Photo by 
+               <a href="https://unsplash.com/@haliewestphoto">
+                  Halie West</a> on 
+                  <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">
+                     Unsplash
+               </a>
+            </p>
+        </div>
 
+        <div id="form-div">
+            <div class="text-group">
+                <p>This is not a real online service! You know you 
+                    need something like this in your life to help you 
+                    realize your deepest dreams. <span>Sing up <em>now</em> 
+                    to get started.</span>
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+           
+            <form action="submit">
+                <fieldset class="field-group">
+                    <div class="input-fields">
+                        <h3>Let's do this!</h3>
+                        <div class="field">
+                            <div class="input-group">
+                                <label for="first-name" class="labels">FIRST NAME</label>
+                                <input type="text" name="first_name" id="first-name" recquired>
+                            </div>
+                            <div class="input-group">
+                                <label for="last-name" class="labels">LAST NAME</label>
+                                <input type="text" name="last_name" id="last-name" recquired>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="input-group">
+                                <label for="email" class="labels">EMAIL</label>
+                                <input type="email" name="email" id="email" recquired>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone-number" class="labels">PHONE NUMBER</label>
+                                <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{11,15}" recquired>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="input-group">
+                                <label for="password" class="labels">PASSWORD</label>
+                                <input type="password" name="password" id="password" minlength="6" maxlength="12" recquired>
+                            </div>
+                            <div class="input-group">
+                                <label for="confirm-pass" class="labels">CONFIRM PASSWORD</label>
+                                <input type="password" name="password" id="confirm-pass" minlength="6" maxlength="12" recquired>
+                            </div>
+                        </div>
+                    <div>
+                </fieldset>
+                <footer class="button-group">
+                    <button type="submit" id="submit-btn">Create Account</button>
+                    <p>Already have and account? <a href="#">Log in</a></p>
+                </footer>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
